@@ -8,3 +8,8 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+pp "this is total sum of revenue: #{Store.sum(:annual_revenue)}"
+pp "this is average revenue: #{Store.average(:annual_revenue)} " 
+
+pp Store.where("annual_revenue >= ?", 1000000)
